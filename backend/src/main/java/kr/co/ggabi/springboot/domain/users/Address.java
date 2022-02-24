@@ -10,6 +10,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import javax.persistence.*;
 import java.util.Date;
 
+
 @Setter
 @Getter
 @NoArgsConstructor

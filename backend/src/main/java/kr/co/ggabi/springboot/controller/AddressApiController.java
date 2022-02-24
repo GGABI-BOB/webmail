@@ -20,7 +20,6 @@ public class AddressApiController {
     public List<AddressResponseDto> show(){
         return addressService.findAllMember();
     }
-
     // return all personal address information(address 보여주기)
     @GetMapping("/personal")
     public List<AddressResponseDto> findAll (@RequestParam("writer") String writer){

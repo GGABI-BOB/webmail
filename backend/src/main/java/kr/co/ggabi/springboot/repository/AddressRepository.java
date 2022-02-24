@@ -20,7 +20,6 @@ public interface AddressRepository extends JpaRepository<Address, Long> {
     //parentId is null == member
     @Query("SELECT p FROM Address p where p.parentId is null ORDER BY p.id DESC")
     List<Address> findAllMember();
-
     @Query("SELECT b FROM Address b ORDER BY b.id DESC")
     List<Address> findAll();
 }

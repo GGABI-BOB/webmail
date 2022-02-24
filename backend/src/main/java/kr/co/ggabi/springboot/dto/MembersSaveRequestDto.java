@@ -12,7 +12,6 @@ import lombok.Setter;
 import java.util.Date;
 
 import static kr.co.ggabi.springboot.domain.users.Authority.ROLE_ADMIN;
-
 @Setter
 @Getter
 @NoArgsConstructor
