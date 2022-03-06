@@ -1,8 +1,10 @@
 # Spring_GGABIMail
 
 (기본)
-apache james 메일 사용
-postgresql 사용
+- apache james 메일 사용
+- postgresql 사용
+
+
 
 
 1. james 구동 및 방법
