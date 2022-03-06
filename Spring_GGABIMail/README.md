@@ -5,9 +5,6 @@
 - postgresql 사용
 
 
-
-
-
 1. james 구동 및 방법
 
 sudo apt install openjdk-11-jdk-headless (headless는 gui 없는 서버용 프로그램)
@@ -17,6 +14,7 @@ sudo apt install libc6-i386 libc6-dev-i386
 sudo cd $HOME/bin
 
 sudo ./james start
+
 
 
 2. spring(백엔드) 구동 및 방법
