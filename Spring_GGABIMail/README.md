@@ -14,44 +14,6 @@ sudo ./james start
 
 
 2. spring(백엔드) 구동 및 방법
-// application.yml 파일
-spring:
-  jpa:
-    show-sql: true
-    hibernate:
-      dialect: org.hibernate.dialect.PostgreSQL10Dialect
-      ddl-auto: update
-    generate-ddl: true
-    properties:
-      hibernate:
-        jdbc.lob.non_contextual_creation: true
-  datasource:
-    url: jdbc:postgresql://localhost:5432/ggabi
-    username: postgres
-    password: postgres1234!@
-  jackson:
-    serialization:
-      fail-on-empty-beans: false
-  servlet:
-    multipart:
-      max-file-size: 50MB
-      max-request-size: 50MB
-
-logging:
-  level:
-    kr.co.ggabi: DEBUG
-
-jwt:
-  header: Authorization
-  secret: ggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabiggabi
-  token-validity-in-milliseconds: 86400000
-
-james:
-  dir: /home/ggabi/ggabimail/mailserver/james-server-app-3.6.0/bin/james-cli.sh
-
-admin:
-  accessIp: localhost
-
-mailServer:
-  host: localhost
-  domain: ggabi.co.kr
+nobup.out 파일 삭제 후 다음 명령어 실행
+nohup java -jar backend.jar &
+tail -f nohup.out 
